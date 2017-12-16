@@ -73,8 +73,8 @@ module.exports = {
           engine: 'handlebars',
           init: function (engine, info) {
             engine.registerPartial(
-              'partial',
-              fs.readFileSync('./src/partial.hbs').toString()
+              'body',
+              fs.readFileSync('./src/body.hbs').toString()
             )
           },
           locals: {
