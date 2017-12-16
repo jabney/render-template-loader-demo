@@ -10,7 +10,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   module: {
-    rules: [{
+    rules: [
+    // The rule for rendering index.html from an ejs template.
+    {
       test: /\.ejs$/,
       use: [{
         loader: 'extract-loader'
@@ -37,6 +39,7 @@ module.exports = {
         }
       }]
     },
+    // The rule for rendering page-pug.html from a pug template.
     {
       test: /\.pug$/,
       use: [{
@@ -59,6 +62,7 @@ module.exports = {
         }
       }]
     },
+    // The rule for rendering page-hbs.html from a handlebars template.
     {
       test: /\.hbs$/,
       use: [{
