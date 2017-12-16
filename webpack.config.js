@@ -27,7 +27,7 @@ module.exports = {
           engine: 'ejs',
           locals: {
             title: 'Render Template Loader',
-            desc: 'Rendering templates with a loader since 2017'
+            desc: 'Rendering templates with a Webpack loader since 2017'
           },
           engineOptions: function (info) {
             // Ejs wants a filename for partials rendering.
