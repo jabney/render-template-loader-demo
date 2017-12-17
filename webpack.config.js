@@ -13,7 +13,7 @@ module.exports = {
     rules: [
     // The rule for rendering index.html from an ejs template.
     {
-      test: /\.ejs$/,
+      test: /\/src\/index.ejs$/,
       use: [{
         loader: 'extract-loader'
       },
